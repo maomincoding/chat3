@@ -1,0 +1,25 @@
+@charset "utf-8"; 
+/* CSS Document */
+/*** 
+font-size:12px==font-size:0.48rem
+font-size:14px==font-size:0.54rem
+font-size:16px==font-size:0.6rem
+font-size:18px==font-size:0.7rem
+font-size:20px==font-size:0.78rem
+font-size:22px==font-size:0.82rem
+font-size:26px==font-size: 1rem;
+**/
+/* public */
+
+html{font-size:62.5%; margin:0; padding:0; width:100%; background:#fff; -webkit-text-size-adjust:none;}
+body{width:100%; margin:0 auto !important; padding:0; background:#fff; -webkit-text-size-adjust:none;    max-width: 640px !important;color:#333333;}
+body, h1, h2, h3, h4, h5, h6, hr, p,blockquote, dl, dt, dd, ul, ol, li, pre,strong, b, form, fieldset, legend, button, input, textarea, th, td, tr, button, input, select, textarea{font-family:Helvetica,Microsoft Yahei; font-size:0.6rem; margin:0; vertical-align:middle; -webkit-text-size-adjust:none; }
+*{margin:0; padding:0; text-shadow:none;  -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; -webkit-text-size-adjust:none; }
+h1, h2, h3, h4, h5, h6{font-size:100%;}
+i, em{font-style:normal;}
+ul, ol, li{list-style:none;}
+a, button, input, textarea{text-decoration:none;  -webkit-tap-highlight-color:rgba(0,0,0,0); outline:none; -webkit-appearance: none; -moz-border-radius:0; -webkit-border-radius:0; -o-border-radius:0; -ms-border-radius:0; border-radius:0; }
+a:active, button:active{text-decoration:none;  outline:none;}
+a.anone, a.anone:active{filter:Alpha(Opacity=100); -webkit-opacity:1; -moz-opacity:1; -ms-opacity:1; -o-opacity:1; opacity:1;}
+img{border:medium none; margin:0; padding:0; list-style-type:none; border:0; border:none; vertical-align:top;width:100%;display:block;}
+

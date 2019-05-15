@@ -1,0 +1,41 @@
+ .ovf{overflow: hidden;}
+ body,html { width: 100%; height: 100%; background: #F7F7F7; }
+.title { display: none; box-shadow: 0px 0px 8px #C0C0C0; width: 100%; position: fixed; max-width: 640px; z-index: 1000; text-align: center; padding: 0.4rem 0; background: #ffffff; }
+.tit { font-family: 'Microsoft JhengHei'; color: #333333; font-size: 0.85rem; }
+.title div{ width: 93%; margin:  0 auto; }
+.title p{float: left;}
+.title p:nth-child(2){ width: 50%;vertical-align: middle; }
+.title img{ width: 30%; vertical-align: middle;display: none; }
+.bg{position: fixed;top:18%;width: 50%;left: 25%; max-width: 640px;animation: up-down1 0.5s ease 0s  both  alternate;  }
+.cd,.title p:nth-child(3){ color: #fff; width: 25%; }
+#text{ font-size: 0.65rem; width: 90%; margin-left: 5%; padding: 0.4rem; padding-left: 0.8rem; resize: none; border-radius: 0.8rem; border: none;}
+.chatbox { background: #EDEDED;   }
+#chat { width: 90%; margin: 0 auto; height:86vh; overflow-y: scroll;padding: 0.4rem 0; }
+.box {display: none; width: 100%; overflow: hidden;background: #F7F7F7; box-shadow: 0px 0px 8px #C0C0C0; }
+.box div:nth-child(1) { width: 78%; float: left; margin: 0.28rem 0; box-sizing: border-box;}
+.box div:nth-child(2) { background: #F7F7F7; float: right; width: 14%; margin: 0.3rem 0; margin-right:5%;box-sizing: border-box; }
+#btn { color: #fff; background: #DDDEE2 ; border-radius:1rem; text-align: center; font-size: 0.65rem; padding: 0.3rem 0.2rem; }
+.chatlist{ font-weight: bold; color: #333;position: relative;float: left; word-wrap:break-word;background: #fff;border-radius:50%; width: 2.8rem;height: 2.8rem;line-height: 2.8rem; text-align: center;font-size: 0.65rem;  animation: up-down 0.5s ease 0s  both  alternate; }
+.divbox>div{ margin: 0.5rem 0;overflow: hidden; }
+.chatlist1{float: left;;margin-left:0.4rem; max-width:74%; white-space:normal; word-break:break-all;color: #fff; background: #98E165;border-radius:0.7rem; padding:0.5rem; margin-top:0.55rem;  text-align: justify;font-size: 0.65rem; box-shadow: 0px 0px 10px #f4f4f4; animation: up-down 0.5s ease 0s  both  alternate; }
+.chatlist2{ float: right; margin-right:0.4rem; max-width:74%;white-space:normal; word-break:break-all; color: #fff; background: #98E165;border-radius:0.8rem; padding:0.5rem;  margin-top:0.55rem;text-align: justify;font-size: 0.65rem; color: #fff;box-shadow: 0px 0px 10px #f4f4f4; animation: up-down 0.5s ease 0s  both  alternate; }
+@keyframes up-down { 0% { opacity: 0; -webkit-transform:  translateX(0) translateY(1rem); -moz-transform:  translateX(0) translateY(1rem); transform:  translateX(0) translateY(1rem) } 100%{ opacity: 1; -webkit-transform: none; -moz-transform: none; transform: none } }
+@keyframes up-down1 { 0% { opacity: 0; -webkit-transform:  translateX(0) translateY(1rem); -moz-transform:  translateX(0) translateY(1rem); transform:  translateX(0) translateY(1rem) } 100%{ opacity: 1; -webkit-transform: none; -moz-transform: none; transform: none } }
+.chat_b{ display: none; padding-top:12%; }
+.divbox{overflow: hidden;}
+.ads{display: none;}
+input { caret-color: rgb(107, 248, 5) !important; }
+input::placeholder{ transform: translate(0, 0.05rem); -webkit-transform: translate(0, 0.05rem); -moz-transform: translate(0, 0.05rem); -ms-transform: translate(0, 0.05rem); -o-transform: translate(0, 0.05rem); }
+.init {  position: fixed; text-align: center; top:58%; width: 100%; max-width: 640px; }
+.init div:nth-child(1){ background: #fff; color: #333333; float: left; width: 40%;margin-left:5%;  font-size: 0.65rem; padding: 0.5rem 0; border-radius: 1rem;  }
+.init div:nth-child(2) { background: #98E165; color: #fff; float: right; font-size: 0.65rem;margin-right:5%;  width: 40%;  padding: 0.5rem 0; border-radius: 1rem; }
+.swal-button{ border-radius:1rem !important; background: #98E165 !important; box-shadow: 0px 0px 40px #e0e0e0 !important; border: 1px solid #e0e0e0 !important; font-size:0.6rem !important; padding: 0.4rem 0.8rem !important; }
+.swal-text{ font-size:0.65rem !important; }
+.swal-text:first-child{ margin-top:1.8rem !important; }
+.divll{text-align: center;font-size: 0.625rem;margin: 0.6rem 0;}
+.login{display: none; position: fixed;left: 10%;top:30%; width: 100%;max-width: 640px; }
+.register { display: none; position: fixed; left: 10%; top: 30%; width: 100%; max-width: 640px; }
+.innt { border: none; width: 80%; margin: 0.2rem auto; padding: 0.6rem 0; padding-left: 0.5rem;background: #F7F7F7; font-size: 0.7rem; border-bottom:1px solid #cacaca; }
+.btnn { width: 80%; margin: 0 auto; margin-top: 1.2rem; color: #fff; padding: 0.58rem 0; padding-left: 0.4rem; padding-right: 0.4rem; background: #98E165; border: none; border-radius:1rem; font-size: 0.65rem; }
+.fix { display: none; overflow: auto; position: fixed; left: 0; width: 100%; right: 0; top: 6.4%; bottom: 0; height: 93.6%; background: #fff; box-shadow: 20px 0px 50px #e0e0e0; }
+.fix li {height: 3rem;line-height: 3rem; margin:0.7rem 0; padding-left:3.5%;  font-size: 0.75rem; color: #333;font-weight:bold; background: #f4f4f4;  }
