@@ -1,4 +1,4 @@
-    var socket = io.connect("106.13.131.245:3003");
+    var socket = io.connect("localhost:3003");
     var re = document.querySelector("#re");
     var register1=document.querySelector(".register");
     var init =document.querySelector(".init");
