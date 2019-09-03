@@ -68,18 +68,27 @@
     //  console.log(pass2)
  });
 // 统计在线人数
+var arrh=[]
   socket.on('dataval', function (val) {
-      document.querySelector(".fix").innerHTML = "";
       vf = val;
       console.log(vf);
-      for (let i = 0; i < vf.length; i++) {
-            var li = document.createElement("li");
-            li.innerText = vf[i];
-            console.log(vf[i]);
-            socket.emit("time", vf[i]);
-            document.querySelector(".fix").appendChild(li);
-      }
-     
+        document.querySelector(".fix").innerHTML = ''
+        for (let i = 0; i < vf.length; i++) {
+            // uu++
+            arrh.push(vf[i])
+            console.log(arrh)
+        }
+              var rf = [...new Set(arrh)]
+              console.log(rf)
+              for (let j = 0; j < rf.length; j++) {
+                    var li = document.createElement("li");
+                    li.classList.add("active");
+                    li.innerText = rf[j]
+                    console.log(rf[j])
+                    socket.emit("time", rf[j]);
+                    document.querySelector(".fix").appendChild(li);
+                  
+              }
   });
 // 生成数组
   var ar="";
@@ -200,7 +209,7 @@ function register() {
         var div1 = document.createElement("div");
         var em=document.createElement("em");
         var ads = document.createElement("audio");
-        ads.src = "http://106.13.131.245/data/s.wav";
+        ads.src = "http://106.13.131.245/data/res.mp3";
         ads.className = "ads";
         s1.className="chatlist";
         s2.className="chatlist1";
@@ -233,7 +242,7 @@ function register() {
                 var ads = document.createElement("audio");
                 p1.style.cssText="float:right;";
                 s2.style.cssText = "color:#333;"
-                ads.src = "https://maomincoding.github.io/chatdata/s.wav";
+                ads.src = "http://106.13.131.245/data/s.wav";
                 ads.className = "ads";
                 div1.className = "divbox";
                 s1.className="chatlist";
