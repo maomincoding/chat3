@@ -80,6 +80,7 @@ var arrh=[]
         }
               var rf = [...new Set(arrh)]
               console.log(rf)
+              rf=vf
               for (let j = 0; j < rf.length; j++) {
                     var li = document.createElement("li");
                     li.classList.add("active");
