@@ -1,4 +1,16 @@
-var socket = io.connect("https://www.maomin.club:3003/",{ 'reconnect': true });
+// var socket = io.connect("https://www.maomin.club:3003");
+function sock () {
+    return io.connect("localhost:3003");
+}
+// 心跳机制
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState == 'hidden') {
+        //记录页面隐藏时间
+        sock()
+        console.log('隐藏了')
+    }
+})
+var socket = sock()
     var re = document.querySelector("#re");
     var register1=document.querySelector(".register");
     var init =document.querySelector(".init");
@@ -19,6 +31,11 @@ var socket = io.connect("https://www.maomin.club:3003/",{ 'reconnect': true });
     var q=0;
     var regCn = /[@:]/im;
     var pattern = /^[\u4E00-\u9FA5]{1,5}$/;
+
+
+
+
+
 // 初始页面注册
     document.querySelector("#reg").onclick=function(){
         register1.style.display="block";
