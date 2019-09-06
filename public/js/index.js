@@ -1,4 +1,4 @@
-    var socket = io.connect("localhost:3003");
+var socket = io.connect("https://www.maomin.club:3003/",{ 'reconnect': true });
     var re = document.querySelector("#re");
     var register1=document.querySelector(".register");
     var init =document.querySelector(".init");
@@ -72,7 +72,7 @@ var arrh=[]
   socket.on('dataval', function (val) {
       vf = val;
       console.log(vf);
-        document.querySelector(".fix").innerHTML = ''
+        
         for (let i = 0; i < vf.length; i++) {
             // uu++
             arrh.push(vf[i])
@@ -91,6 +91,12 @@ var arrh=[]
                   
               }
   });
+  socket.on('join', function (val) {
+  	document.querySelector(".fix").innerHTML = ''
+  })
+  socket.on('disconnect', function (val) {
+  	document.querySelector(".fix").innerHTML = ''
+  })
 // 生成数组
   var ar="";
   socket.on('array', function (val) {
