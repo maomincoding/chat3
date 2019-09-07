@@ -3,12 +3,28 @@ function sock () {
     return io.connect("localhost:3003");
 }
 // 心跳机制
-document.addEventListener('visibilitychange', function () {
-    if (document.visibilityState == 'hidden') {
-        //记录页面隐藏时间
-        sock()
-        console.log('隐藏了')
-    }
+document.addEventListener('visibilitychange',function() {
+	if(document.visibilityState == 'hidden') {
+		//记录页面隐藏时间
+		var hiddenTime = new Date().getTime()	
+		 setTimeout(function(){
+				io.connect("localhost:3003");
+			},1500); 
+	} else {
+		var visibleTime = new Date().getTime();
+		//页面再次可见的时间-隐藏时间>3S,重连	
+		if((visibleTime - hiddenTime) / 1000 > 3){	
+			// 主动关闭连接
+			// console.log('我要断开')
+			io.disconnect()
+			// 1.5S后重连 因为断开需要时间，防止连接早已关闭了
+			setTimeout(function(){
+				io.connect("localhost:3003");
+			},1500);    
+		}else{
+ 			console.log('还没有到断开的时间')
+		}
+	}
 })
 var socket = sock()
     var re = document.querySelector("#re");
