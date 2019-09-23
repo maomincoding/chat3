@@ -196,7 +196,7 @@ function register() {
                         document.querySelector(".swal-button").onclick = function () {
                         document.getElementById("text").focus();
                         document.querySelector(".fix").addEventListener('click', function (e) {
-                           if (e.target.nodeName === "LI"&&e.target.innerText != document.querySelector(".tit").innerText) {
+                           if (e.target.nodeName === "LI"&&e.target.innerText != document.title) {
                                 document.querySelector(".fix").style.display="none";
                                 document.querySelector(".chat_b").style.display="block";
                                 document.querySelector(".box").style.display="block";
@@ -226,7 +226,7 @@ function register() {
     function names1(value) {
         this.name1 = value;
         socket.emit("join", name1);
-        document.title = name1 + "的臻美Chat"
+        document.title = name1;
     }
 // 传密码
     function pass(value){
