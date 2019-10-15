@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes,viewport-fit=cover">
     <title>臻美Chat(私聊版)</title>
-    <link rel="stylesheet" href="public/css/css_zsy.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="public/css/index.css">
-    <script type="text/javascript" src="public/js/viewport.js"></script>
-    <script type="text/javascript" src="public/js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/css_zsy.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/viewport.js"></script>
+    <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script src="js/mSlider.min.js"></script>
 </head>
 <body>
 <!-- 顶部 -->
     <div class="title">
-        <div class="ovf"> <p class="cd"><span>1</span><img src="http://106.13.131.245/data/cd.png" alt=""></p> <p class="tit">臻美Chat</p> <p>null</p> </div>
+        <div class="ovf">
+            <p class="cd"><span>1</span><img src="https://www.maomin.club/data/cd.png" alt="" id="btnRight"></p>
+            <p class="tit">臻美Chat</p>
+            <p>null</p>
+        </div>
     </div>
     <div class="bg">
-        <img src="http://106.13.131.245/data/icon.png" alt="" >
+        <img src="https://www.maomin.club/data/icon.png" alt="" >
     </div>
 <!-- 初始页面 -->
     <div class="init ovf"> <div id="reg">注&nbsp;册</div> <div id="log">登&nbsp;录</div> </div>
@@ -35,9 +40,14 @@
     <div class="chat_b"><div class="chatbox"> <div id="chat"></div> </div> </div> 
 <!-- 输入框 -->
     <div class="box"> <div><input id="text" autofocus="autofocus"></div> <div> <p id="btn">发送</p> </div> </div>
+
 <!-- 侧栏 -->
-    <ul class="fix"></ul>
+<div class="wrap">
+    <div class="layer-right">
+        <div class="fix"></div>
+    </div>
+</div>
 </body>
-<script type="text/javascript" src="public/js/socket.io.min.js"></script>
-<script type="text/javascript" src="public/js/index.js"></script>
+<script type="text/javascript" src="js/socket.io.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </html>
