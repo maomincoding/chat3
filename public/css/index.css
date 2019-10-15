@@ -17,8 +17,8 @@
 #btn { color: #fff; background: #DDDEE2 ; border-radius:1rem; text-align: center; font-size: 0.65rem; padding: 0.3rem 0.2rem; }
 .chatlist{ font-weight: bold; color: #333;position: relative;float: left; word-wrap:break-word;background: #fff;border-radius:50%; width: 2.8rem;height: 2.8rem;line-height: 2.8rem; text-align: center;font-size: 0.65rem;  animation: up-down 0.5s ease 0s  both  alternate; }
 .divbox>div{ margin: 0.5rem 0;overflow: hidden; }
-.chatlist1{float: left;;margin-left:0.4rem; max-width:74%; white-space:normal; word-break:break-all;color: #fff; background: #98E165;border-radius:0.7rem; padding:0.5rem; margin-top:0.55rem;  text-align: justify;font-size: 0.65rem; box-shadow: 0px 0px 10px #f4f4f4; animation: up-down 0.5s ease 0s  both  alternate; }
-.chatlist2{ float: right; margin-right:0.4rem; max-width:74%;white-space:normal; word-break:break-all; color: #fff; background: #98E165;border-radius:0.8rem; padding:0.5rem;  margin-top:0.55rem;text-align: justify;font-size: 0.65rem; color: #fff;box-shadow: 0px 0px 10px #f4f4f4; animation: up-down 0.5s ease 0s  both  alternate; }
+.chatlist1{float: left;;margin-left:0.4rem; max-width:74%; white-space:normal; word-break:break-all;color: #fff; background: #98E165;border-radius:0.7rem; padding:0.4rem 0.5rem; margin-top:0.55rem;  text-align: justify;font-size: 0.65rem; box-shadow: 0px 0px 10px #f4f4f4; animation: up-down 0.5s ease 0s  both  alternate; }
+.chatlist2{ float: right; margin-right:0.4rem; max-width:74%;white-space:normal; word-break:break-all; color: #fff; background: #98E165;border-radius:0.8rem; padding:0.4rem 0.5rem;  margin-top:0.55rem;text-align: justify;font-size: 0.65rem; color: #fff;box-shadow: 0px 0px 10px #f4f4f4; animation: up-down 0.5s ease 0s  both  alternate; }
 @keyframes up-down { 0% { opacity: 0; -webkit-transform:  translateX(0) translateY(1rem); -moz-transform:  translateX(0) translateY(1rem); transform:  translateX(0) translateY(1rem) } 100%{ opacity: 1; -webkit-transform: none; -moz-transform: none; transform: none } }
 @keyframes up-down1 { 0% { opacity: 0; -webkit-transform:  translateX(0) translateY(1rem); -moz-transform:  translateX(0) translateY(1rem); transform:  translateX(0) translateY(1rem) } 100%{ opacity: 1; -webkit-transform: none; -moz-transform: none; transform: none } }
 .chat_b{ display: none; padding-top:12%; }
@@ -37,5 +37,5 @@ input::placeholder{ transform: translate(0, 0.05rem); -webkit-transform: transla
 .register { display: none; position: fixed; left: 10%; top: 30%; width: 100%; max-width: 640px; }
 .innt { border: none; width: 80%; margin: 0.2rem auto; padding: 0.6rem 0; padding-left: 0.5rem;background: #F7F7F7; font-size: 0.7rem; border-bottom:1px solid #cacaca; }
 .btnn { width: 80%; margin: 0 auto; margin-top: 1.2rem; color: #fff; padding: 0.58rem 0; padding-left: 0.4rem; padding-right: 0.4rem; background: #98E165; border: none; border-radius:1rem; font-size: 0.65rem; }
-.fix { display: none; overflow: auto; position: fixed; left: 0; width: 100%; right: 0; top: 6.4%; bottom: 0;  background: #fff; box-shadow: 20px 0px 50px #e0e0e0; }
+.fix { display: none; overflow: auto; position: fixed; left: 0; width: 100%; right: 0; top: 6.4%; bottom: 0; background: #fff; box-shadow: 20px 0px 50px #e0e0e0; }
 .fix li {height: 3rem;line-height: 3rem; margin:0.7rem 0; padding-left:3.5%;  font-size: 0.75rem; color: #333;font-weight:bold; background: #f4f4f4;  }
