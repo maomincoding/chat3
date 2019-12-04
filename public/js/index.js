@@ -10,6 +10,9 @@ document.addEventListener('visibilitychange', function () {
         console.log('隐藏了')
     }
 })
+setInterval(() => {
+    sock()
+}, 10000);
 var socket = sock()
 var re = document.querySelector("#re");
 var register1 = document.querySelector(".register");

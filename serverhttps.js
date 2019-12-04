@@ -83,6 +83,15 @@ socket.on('disconnect', function (name) {
          removeByValue(data, name);
          io.sockets.emit("dataval", data);
     })
+socket.on('reconnect', attemptNumber => {
+    console.log('重连')
+})
+socket.on('reconnect_failed', () => {
+   console.log('重连失败')
+  })
+socket.on('reconnect_attempt', () => {
+   console.log('正在重连')
+})
 // 在线
 socket.on('time', function (val) {
         // console.log(val);
