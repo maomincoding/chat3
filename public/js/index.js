@@ -31,6 +31,13 @@ var v = "";
 var q = 0;
 var regCn = /[@:]/im;
 var pattern = /^[\u4E00-\u9FA5]{1,5}$/;
+// 同意
+document.querySelector('.yes').onclick=function () {
+    document.querySelector('.dark').style.display='none'
+}
+document.querySelector('.ys').onclick = function () {
+    document.querySelector('.dark').style.display = 'block'
+}
 // 初始页面注册
 document.querySelector("#reg").onclick = function () {
     register1.style.display = "block";
@@ -190,6 +197,7 @@ function login() {
                                     document.querySelector(".chat_b").style.display = "block";
                                     document.querySelector(".box").style.display = "block";
                                     document.querySelector(".tit").innerText = e.target.innerText;
+                                    document.querySelector(".ys").style.display="none";
                                     document.querySelector("#text").focus();
                                     onOff = true;
                                 } else {
