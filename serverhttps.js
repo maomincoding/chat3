@@ -2,7 +2,6 @@ var https=require("https");
 var fs=require("fs");
 var express = require('express');
 var ws=require("socket.io");
-var path=require("path");
 var _ = require('underscore');
 var usocket = [];
 var usocket1 = [];
@@ -14,8 +13,9 @@ var app = express();
 // 静态文件识别
 app.use(express.static('./public'));
 var options = {
-    key: fs.readFileSync('./2_www.maomin.club.key'),
-    cert: fs.readFileSync('./1_www.maomin.club_bundle.crt')
+    // 这是https需要的密钥文件
+    // key: fs.readFileSync('./2_www.maomin.club.key'),
+    // cert: fs.readFileSync('./1_www.maomin.club_bundle.crt')
 }
 var server = https.createServer(options, app);
 
