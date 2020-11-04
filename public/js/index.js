@@ -1,6 +1,5 @@
-// var socket = io.connect("https://www.maomin.club:3003");
 function sock() {
-    return io.connect("https://www.maomin.club:3003");
+    return io.connect("http://localhost:3003"); // http环境下
 }
 // 心跳机制
 document.addEventListener('visibilitychange', function () {
